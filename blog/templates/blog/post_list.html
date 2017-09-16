@@ -10,9 +10,15 @@
   <div>
     <h2>tez ja</h2>
   </div>
+  {% for post in posts %}
+
   <div>
-<p> hejo :) :D </p>
-{{posts}}
+    <p>published:{{post.published_date}}</p>
+    <h3><a href="">{{post.title}}</a></h3>
+    <p>{{post.text|linebreaksbr}}</p>
+    {{posts}}
+
 <div>
+{%endfor%}
 </body>
 </html>
